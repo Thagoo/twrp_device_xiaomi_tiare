@@ -69,8 +69,10 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Init
+ifneq ($(wildcard system/core/init/vendor_init.cpp),)
 TARGET_INIT_VENDOR_LIB := libinit_ulysse
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ulysse
+endif
 TARGET_PLATFORM_DEVICE_BASE := /devices/platform/soc/
 
 # Recovery
