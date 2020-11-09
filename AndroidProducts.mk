@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_ulysse.mk
+    $(LOCAL_DIR)/omni_tiare.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_ulysse-user \
-    omni_ulysse-userdebug \
-    omni_ulysse-eng
+    omni_tiare-user \
+    omni_tiare-userdebug \
+    omni_tiare-eng

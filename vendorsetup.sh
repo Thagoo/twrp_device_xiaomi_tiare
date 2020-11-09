@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_ulysse-userdebug
-add_lunch_combo omni_ulysse-eng
+add_lunch_combo omni_tiare-userdebug
+add_lunch_combo omni_tiare-eng

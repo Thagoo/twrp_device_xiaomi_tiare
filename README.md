@@ -1,9 +1,9 @@
-TWRP Device Tree for Xiaomi Redmi Note 5A / Y1
-==============================================
+TWRP Device Tree for Xiaomi Redmi Go
+====================================
 
 ## Features
 
-This TWRP automatically detects the device region and updates the device code name _"ulysse"_
+This TWRP automatically detects the device region and updates the device code name _"tiare"_
 
 ## Compile
 
@@ -19,7 +19,7 @@ And execute these:
 ```
 export ALLOW_MISSING_DEPENDENCIES=true # Only if using Minimal TWRP Tree
 . build/envsetup.sh
-lunch omni_ulysse-eng
+lunch omni_tiare-eng
 mka recoveryimage
 ```
 
@@ -27,7 +27,7 @@ mka recoveryimage
 
 Testing it:
 ```
-fastboot boot out/target/product/ulysse/recovery.img
+fastboot boot out/target/product/tiare/recovery.img
 ```
 
 Flash it via fastboot:

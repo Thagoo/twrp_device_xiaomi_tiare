@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/ulysse
+DEVICE_PATH := device/xiaomi/tiare
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,7 +36,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := ulysse,ugglite,ugg
+TARGET_OTA_ASSERT_DEVICE := tiare,ugglite,ugg
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8937
@@ -52,8 +52,8 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm64
 
 TARGET_KERNEL_VERSION := 4.9
-TARGET_KERNEL_CONFIG := ulysse_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/ulysse-$(TARGET_KERNEL_VERSION)
+TARGET_KERNEL_CONFIG := tiare_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/tiare-$(TARGET_KERNEL_VERSION)
 
 ifeq ($(wildcard $(TARGET_KERNEL_SOURCE)),)
 TARGET_PREBUILT_KERNEL :=  $(DEVICE_PATH)/prebuilt/zImage
@@ -76,10 +76,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 536870912
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Init
-ifneq ($(wildcard system/core/init/vendor_init.cpp),)
-TARGET_INIT_VENDOR_LIB := libinit_ulysse
-TARGET_RECOVERY_DEVICE_MODULES := libinit_ulysse
-endif
 TARGET_PLATFORM_DEVICE_BASE := /devices/platform/soc/
 
 # Recovery
@@ -125,6 +121,6 @@ PLATFORM_VERSION := 16.1.0
 
 # OrangeFox
 OF_ALLOW_DISABLE_NAVBAR := 1
-OF_MAINTAINER := xiaomi-ulysse
+OF_MAINTAINER := xiaomi-tiare
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_USE_TWRP_SAR_DETECT := 1

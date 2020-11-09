@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := ulysse
+PRODUCT_RELEASE_NAME := tiare
 
 # Inherit from this configs
 $(call inherit-product, build/target/product/embedded.mk)
@@ -26,10 +26,10 @@ PRODUCT_PACKAGES += \
     libcryptfs_hw
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := ulysse
-PRODUCT_NAME := omni_ulysse
+PRODUCT_DEVICE := tiare
+PRODUCT_NAME := omni_tiare
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 5A / Y1
+PRODUCT_MODEL := Redmi Note Go
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_PROPERTY_OVERRIDES += \
