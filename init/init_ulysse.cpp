@@ -43,36 +43,24 @@ void load_properties(const char *model) {
     property_set("ro.product.device", model);
 }
 
-
 void vendor_load_properties() {
-    std::string device_region = android::base::GetProperty("ro.boot.product.cert", "");
-    if (device_region == "M1810F6G")
-    {
-        load_properties("onc");
+    std::string dt_model;
+
+    if (android::base::ReadFileToString("/proc/device-tree/model", &dt_model)) {
+        LOG(INFO) << "DT MODEL: " << dt_model;
+
+        if (!strncmp(dt_model.c_str(), "Qualcomm Technologies, Inc. MSM8917-PMI8937 MTP", 47)) {
+		load_properties("ugglite");
+        }
+        else if (!strncmp(dt_model.c_str(), "Qualcomm Technologies, Inc. MSM8940-PMI8937 MTP", 47)) {
+		load_properties("ugg");
+        }
+        else {
+		load_properties("ulysse");
+        }
     }
-    else if (device_region == "M1810F6H")
-    {
-        load_properties("onc");
-    }
-    else if (device_region == "M1810F6I")
-    {
-        load_properties("onc");
-    }
-    else if (device_region == "M1810F6LG")
-    {
-        load_properties("ulysse");
-    }
-    else if (device_region == "M1810F6LH")
-    {
-        load_properties("ulysse");
-    }
-    else if (device_region == "M1810F6LI")
-    {
-        load_properties("ulysse");
-    }
-    else
-    {
-        load_properties("onc");
+    else {
+        LOG(ERROR) << "Unable to read DT_MODEL";
     }
 }
 

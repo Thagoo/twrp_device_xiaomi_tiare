@@ -21,6 +21,10 @@ PRODUCT_RELEASE_NAME := ulysse
 $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Encryption
+PRODUCT_PACKAGES += \
+    libcryptfs_hw
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := ulysse
 PRODUCT_NAME := omni_ulysse
