@@ -15,17 +15,17 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := onclite
+PRODUCT_RELEASE_NAME := ulysse
 
 # Inherit from this configs
 $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_DEVICE := onclite
-PRODUCT_NAME := omni_onclite
+PRODUCT_DEVICE := ulysse
+PRODUCT_NAME := omni_ulysse
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 7
+PRODUCT_MODEL := Redmi Note 5A / Y1
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \

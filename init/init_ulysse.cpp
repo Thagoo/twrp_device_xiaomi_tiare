@@ -60,15 +60,15 @@ void vendor_load_properties() {
     }
     else if (device_region == "M1810F6LG")
     {
-        load_properties("onclite");
+        load_properties("ulysse");
     }
     else if (device_region == "M1810F6LH")
     {
-        load_properties("onclite");
+        load_properties("ulysse");
     }
     else if (device_region == "M1810F6LI")
     {
-        load_properties("onclite");
+        load_properties("ulysse");
     }
     else
     {

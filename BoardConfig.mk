@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/onclite
+DEVICE_PATH := device/xiaomi/ulysse
 
 # Architecture
 TARGET_ARCH := arm64
@@ -73,8 +73,8 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_onclite
-TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
+TARGET_INIT_VENDOR_LIB := libinit_ulysse
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ulysse
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Recovery

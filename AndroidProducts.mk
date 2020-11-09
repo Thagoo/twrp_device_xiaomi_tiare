@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_onclite.mk
+    $(LOCAL_DIR)/omni_ulysse.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_onclite-user \
-    omni_onclite-userdebug \
-    omni_onclite-eng
+    omni_ulysse-user \
+    omni_ulysse-userdebug \
+    omni_ulysse-eng

@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),onclite)
+ifeq ($(TARGET_DEVICE),ulysse)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

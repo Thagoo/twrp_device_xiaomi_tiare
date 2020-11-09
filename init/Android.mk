@@ -22,7 +22,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := \
     system/core/base/include \
     system/core/init
-LOCAL_SRC_FILES := init_onclite.cpp
-LOCAL_MODULE := libinit_onclite
+LOCAL_SRC_FILES := init_ulysse.cpp
+LOCAL_MODULE := libinit_ulysse
 
 include $(BUILD_STATIC_LIBRARY)
