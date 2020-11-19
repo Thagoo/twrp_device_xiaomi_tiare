@@ -98,6 +98,7 @@ TW_DEFAULT_BRIGHTNESS := 102
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_HAS_EDL_MODE := true
 TW_NO_USB_STORAGE := true
+TW_THEME := portrait_hdpi
 
 # Show build time on the splash screen
 TW_DEVICE_VERSION=$(shell date '+%Y%m%d')
